@@ -13,4 +13,11 @@
 -export([start/0]).
 
 start()->
+
+  msgpack:pack({[{<<"key">>, <<"value">>}]}, [{format, jiffy}]),
+  F
+  io:format("pack: ~ts",[Pack]),
   io:format("222222").
+
+times(F, X,  0) -> F(X);
+times(F, X, N) -> F(X), times(F, X, N-1).
