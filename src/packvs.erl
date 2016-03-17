@@ -10,4 +10,7 @@
 -author("ycx").
 
 %% API
--export([]).
+-export([start/0]).
+
+start()->
+  io:format("222222").
