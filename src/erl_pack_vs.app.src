@@ -1,0 +1,9 @@
+{application, erl_pack_vs,
+  [
+    {description, "Tests for some common proto libs for Erlang"},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [kernel,
+      stdlib]},
+    {env, []}
+  ]}.
