@@ -12,10 +12,18 @@
 %% API
 -export([start/0]).
 
-start()->
 
+
+start()->
+{
+"employees": [
+{ "firstName":"Bill" , "lastName":"Gates" },
+{ "firstName":"George" , "lastName":"Bush" },
+{ "firstName":"Thomas" , "lastName":"Carter" }
+]
+}"
   msgpack:pack({[{<<"key">>, <<"value">>}]}, [{format, jiffy}]),
-  F
+
   io:format("pack: ~ts",[Pack]),
   io:format("222222").
 
